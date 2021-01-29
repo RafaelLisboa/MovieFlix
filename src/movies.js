@@ -1,7 +1,6 @@
-require('dotenv').config();
+require("dotenv").config();
 
-const api_key = process.env.REACT_APP_API_KEY
-console.log(api_key);
+const api_key = process.env.REACT_APP_API_KEY;
 const urlBase = "https://api.themoviedb.org/3/discover/";
 // https://api.themoviedb.org/3/?api_key=e29e9dbf058dc6c797f9538fa41e8844
 
