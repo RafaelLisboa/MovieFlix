@@ -4,6 +4,7 @@ import ContentRow from './components/ContentRow'
 import Movies from './movies'
 import MainContent from './components/MainContent'
 import Header from './components/Header'
+import HamburguerMenu from './components/HamburguerMenu'
 
  const App = () => {
     const [content, setContent] = useState({
@@ -39,7 +40,8 @@ import Header from './components/Header'
     }, []);
 
     return (
-        <div>
+        <>
+            <HamburguerMenu />
             <Header />
             <MainContent main={content.mainItem} />
             <ContentRow gener="Em alta" results={content.main} />
@@ -47,7 +49,7 @@ import Header from './components/Header'
             <ContentRow gener="Romance" results={content.romance} />
             <ContentRow gener="Comédia" results={content.comedy} />
             <ContentRow gener="Aventura" results={content.adventure} />
-        </div>
+        </>
     )
 }
 

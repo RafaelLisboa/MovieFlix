@@ -11,10 +11,11 @@ header {
     justify-content: space-between;
     z-index: 9999;
     padding: 15px 2%;
+
     top: 0;
     left: 0;
     width: 100%;
-    background-color: linear-gradient(to bottom, black 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
 }
 
 header .logo {
