@@ -1,0 +1,45 @@
+.row {
+    margin: -40px 0 70px 0;
+    position: relative;
+    z-index: 4;
+}
+
+.row h2 {
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.row__line {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.row__images {
+    width: 9999px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.row__images img {
+    padding: 0 3px;
+}
+
+.row__images::-webkit-scrollbar, .row__line::-webkit-scrollbar {
+    display: none;
+}
+
+.row__images,.row__line {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.row__images img {
+    transition: 0.4s ease 
+}
+
+.row__images img:hover  {
+    transform: scale(1.1);
+}
+
