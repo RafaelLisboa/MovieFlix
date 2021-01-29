@@ -17,7 +17,6 @@
 }
 
 .row__images {
-    width: 9999px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
