@@ -1,13 +1,11 @@
 .background-image {
     max-width: 100vw;
-    min-width: 100vw;
     height: 95vh;
     position: relative;
 }
 
 .background-image img {
     width: 100%;
-    min-width: 100vw;
     height: 95vh;
 }
 
@@ -48,6 +46,10 @@
         line-height: calc(85vh);
 
     }
+}
 
-
+@media screen and (max-width: 320px) {
+    .menu {
+        display: none;
+    }
 }
