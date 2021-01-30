@@ -20,13 +20,12 @@ header {
 
 header .logo {
     margin-right: 50px;
-
 }
 
 header .logo h3 {
     font-size: 2.5em;
     color: rgb(192, 0, 0);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
 }
 
