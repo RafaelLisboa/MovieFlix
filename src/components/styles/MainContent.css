@@ -80,7 +80,7 @@ button span {
 
     .details-wrapper {
         margin: 0 auto;
-        margin-top: 150px;
+        margin-top: 150px !important;
     }
 
     .title {
