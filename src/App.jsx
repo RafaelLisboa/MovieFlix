@@ -18,10 +18,10 @@ import Header from './components/Header'
     useEffect(() => {
         const loadContent = async () => {
 
-            const actionContent = await Movies.getContent('28', true);
-            const romanceContent = await Movies.getContent('10749', true);
-            const comedyContent = await Movies.getContent('35', true);
-            const adventureContent = await Movies.getContent('12', true);
+            const actionContent = await Movies.getContent('28');
+            const romanceContent = await Movies.getContent('10749');
+            const comedyContent = await Movies.getContent('35');
+            const adventureContent = await Movies.getContent('12');
             const mainContent = await Movies.getMainContent();
             const mainContentList = mainContent.list;
             const mainContentItem = mainContent.main;

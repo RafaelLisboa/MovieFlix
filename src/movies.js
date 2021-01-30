@@ -1,12 +1,11 @@
-require('dotenv').config();
+require("dotenv").config();
 
-const api_key = process.env.REACT_APP_API_KEY
+const api_key = process.env.REACT_APP_API_KEY;
 const urlBase = "https://api.themoviedb.org/3/discover/";
 // https://api.themoviedb.org/3/?api_key=e29e9dbf058dc6c797f9538fa41e8844
 
-const getContentData = async (genrerID, isMovie = true) => {
-  const category = isMovie ? "movie" : "tv";
-  const url = `${urlBase}${category}/?api_key=${api_key}&with_genres=${genrerID}`;
+const getContentData = async (genrerID) => {
+  const url = `${urlBase}movie/?api_key=${api_key}&with_genres=${genrerID}`;
   let fecthData = await fetch(url);
   const json = await fecthData.json();
   return json;

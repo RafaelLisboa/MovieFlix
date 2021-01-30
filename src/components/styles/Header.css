@@ -42,13 +42,26 @@ header nav ul li {
     height: 20px;
 }
 
+.mobile{
+    display: none;
+}
+
+.mobile svg {
+    font-size: 52px;
+}
+
+
 
 @media screen and (max-width: 767px){
     header nav ul li{
         padding: 0 5px;
     }
-    
-    header nav ul li:nth-child(n+4){
-        display: none;
+
+    .menu.desktop {
+        display: none !important;
+    }
+
+    .menu.mobile {
+        display: block;
     }
 }
