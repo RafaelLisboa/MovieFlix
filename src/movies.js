@@ -19,8 +19,6 @@ const getMainContent = async () => {
   const randomIndex = Math.floor(Math.random() * list.length);
   const randomItem = list[randomIndex];
   list.splice(randomIndex, 1);
-  console.log(randomItem);
-  console.log(list);
   return {
     main: randomItem,
     list: list,
@@ -31,4 +29,5 @@ const mainContent = {
   getContent: async (genrerID) => getContentData(genrerID),
   getMainContent: async () => getMainContent(),
 };
+
 export default mainContent;
