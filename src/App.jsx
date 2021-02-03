@@ -4,8 +4,9 @@ import ContentRow from './components/ContentRow'
 import Movies from './movies'
 import MainContent from './components/MainContent'
 import Header from './components/Header'
+import RowWrapper from './components/RowWrapper'
 
- const App = () => {
+const App = () => {
     const [content, setContent] = useState({
         mainItem: {},
         main: [],
@@ -25,10 +26,10 @@ import Header from './components/Header'
             const mainContent = await Movies.getMainContent();
             const mainContentList = mainContent.list;
             const mainContentItem = mainContent.main;
-            
+
             setContent({
                 mainItem: mainContentItem,
-                main: mainContentList, 
+                main: mainContentList,
                 comedy: comedyContent.results,
                 action: actionContent.results,
                 adventure: adventureContent.results,
@@ -42,11 +43,13 @@ import Header from './components/Header'
         <>
             <Header />
             <MainContent main={content.mainItem} />
-            <ContentRow gener="Em alta" results={content.main} />
-            <ContentRow gener="Ação" results={content.action} />
-            <ContentRow gener="Romance" results={content.romance} />
-            <ContentRow gener="Comédia" results={content.comedy} />
-            <ContentRow gener="Aventura" results={content.adventure} />
+            <RowWrapper>
+                <ContentRow gener="Em alta" results={content.main} />
+                <ContentRow gener="Ação" results={content.action} />
+                <ContentRow gener="Romance" results={content.romance} />
+                <ContentRow gener="Comédia" results={content.comedy} />
+                <ContentRow gener="Aventura" results={content.adventure} />
+            </RowWrapper>
         </>
     )
 }

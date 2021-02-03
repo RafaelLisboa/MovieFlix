@@ -35,10 +35,10 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .row__images img {
-    transition: 0.4s ease 
+    height: 280px;
+    transition: 0.4s ease
 }
 
 .row__images img:hover  {
     transform: scale(1.1);
 }
-

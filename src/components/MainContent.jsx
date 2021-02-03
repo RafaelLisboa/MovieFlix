@@ -13,7 +13,7 @@ const MainContent = (props) => {
                 <div className="content-details">
                     <div className="details-wrapper">
                         <h2 className="title">{props.main.original_title || props.main.name}</h2>
-                        <p className="description">{}</p>
+                        <p className="description">{props.main.overview}</p>
                         <button id="play">
                             <IoPlayCircleOutline /> <span>Assistir Agora</span>
                         </button>

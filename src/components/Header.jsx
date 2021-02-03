@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoMenu } from 'react-icons/io5'
+import { IoMenu, IoPersonCircle, IoSearchOutline} from 'react-icons/io5'
 import './styles/Header.css'
 
 const Header = () => {
@@ -12,11 +12,12 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>Inicio</li>
-                        <li>Séries</li>
                         <li>Filmes</li>
-                        <li>Bombando</li>
                         <li>Minha Lista</li>
+                        <li style={{paddingLeft: 60}}><i><IoPersonCircle /> </i></li>
+                        <li><i><IoSearchOutline /> </i></li>
                     </ul>
+
                 </nav>
             </div>
             <div className="menu mobile">

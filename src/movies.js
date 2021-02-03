@@ -5,14 +5,14 @@ const urlBase = "https://api.themoviedb.org/3/discover/";
 // https://api.themoviedb.org/3/?api_key=e29e9dbf058dc6c797f9538fa41e8844
 
 const getContentData = async (genrerID) => {
-  const url = `${urlBase}movie/?api_key=${api_key}&with_genres=${genrerID}`;
+  const url = `${urlBase}movie/?api_key=${api_key}&with_genres=${genrerID}&language=pt-BR`;
   let fecthData = await fetch(url);
   const json = await fecthData.json();
   return json;
 };
 
 const getMainContent = async () => {
-  const url = `https://api.themoviedb.org/3/trending/all/week?api_key=${api_key}`;
+  const url = `https://api.themoviedb.org/3/trending/all/week?api_key=${api_key}&language=pt-BR`;
   const data = await fetch(url);
   const json = await data.json();
   const list = json.results;

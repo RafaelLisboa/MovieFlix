@@ -12,7 +12,9 @@ html, body {
     background-color: #000;
     color: #fff;
     font-family: 'Anton', sans-serif;
+    min-height: 600px;
 }
+
 
 .Container {
     width: 100%;
