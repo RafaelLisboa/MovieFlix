@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import SideBar from './SideBar'
 import { IoMenu, IoPersonCircle, IoSearchOutline} from 'react-icons/io5'
 import './styles/Header.css'
 
@@ -21,9 +22,8 @@ const Header = () => {
                 </nav>
             </div>
             <div className="menu mobile">
-                <nav>
-                    <i><IoMenu /></i>
-                </nav>
+                <i><IoMenu /></i>
+                <SideBar />
             </div>
 
 

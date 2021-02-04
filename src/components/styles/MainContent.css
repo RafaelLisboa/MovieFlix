@@ -117,12 +117,12 @@ button span {
     }
 
     .content-details {
-        width: 100%;
         position: absolute;
         text-align: center;
         top: 0;
-        left: 0;
-        transform: translate(1% , 71%);
+        left: 50%;
+        transform: translate(-49% , 71%);
+        
     }
 }
 
@@ -141,7 +141,6 @@ button span {
     }
 
     .content-details {
-        width: 100%;
 
     }
 

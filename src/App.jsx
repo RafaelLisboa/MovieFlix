@@ -14,6 +14,8 @@ const App = () => {
         adventure: [],
         romance: [],
         comedy: [],
+        horror: [],
+        mistery: []
     })
 
     useEffect(() => {
@@ -23,6 +25,8 @@ const App = () => {
             const romanceContent = await Movies.getContent('10749');
             const comedyContent = await Movies.getContent('35');
             const adventureContent = await Movies.getContent('12');
+            const horrorContent = await Movies.getContent('27');
+            const misteryContent = await Movies.getContent('9648')
             const mainContent = await Movies.getMainContent();
             const mainContentList = mainContent.list;
             const mainContentItem = mainContent.main;
@@ -34,6 +38,8 @@ const App = () => {
                 action: actionContent.results,
                 adventure: adventureContent.results,
                 romance: romanceContent.results,
+                horror: horrorContent.results,
+                mistery : misteryContent.results
             });
         }
         loadContent();
@@ -49,6 +55,8 @@ const App = () => {
                 <ContentRow gener="Romance" results={content.romance} />
                 <ContentRow gener="Comédia" results={content.comedy} />
                 <ContentRow gener="Aventura" results={content.adventure} />
+                <ContentRow gener="Terror" results={content.horror} />
+                <ContentRow gener="Mistério" results={content.mistery} />
             </RowWrapper>
         </>
     )
