@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import SideBar from './SideBar'
 import { IoMenu, IoPersonCircle, IoSearchOutline} from 'react-icons/io5'
 import './styles/Header.css'
 
 const Header = () => {
     return (
+
         <header>
             <div className="logo">
                 <h3>MovieFlix</h3>
