@@ -1,5 +1,54 @@
-.nav-mobile {
+
+.nav-mobile-menu {
+    position: absolute;
+    z-index: 5;
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    background-color: #111;
+    top: 75px;
+    right: 0;
+    text-align: center;
+    font-size: 37px;
+
+    /*animation: fillScreen 0.4s both;*/
 }
+
+.nav-mobile-menu ul {
+    flex-direction: column;
+    transition: 1s;
+}
+
+.nav-mobile-menu ul li {
+    height: auto;
+    margin: 60px 0;
+}
+
+.nav-mobile-menu ul li i {
+    padding: 0 7px;
+}
+
+.menu-icon {
+    font-size: 57px;
+    line-height: 50px;
+}
+
+.menu-icon i {
+    vertical-align: middle;
+
+}
+
+.open {
+    transition: .3s;
+    width: 100vw;
+}
+
+.close {
+    transition: .3s;
+    width: 0;
+}
+
+.close ul {
+    transition: 0.8s;
+    display: none;
+}
+
