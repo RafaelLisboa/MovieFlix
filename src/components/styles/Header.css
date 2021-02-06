@@ -41,6 +41,11 @@ header nav ul li {
     height: 20px;
 }
 
+header nav ul li:hover{
+    transition: 0.3s;
+    color: #cdd;
+}
+
 header nav ul li i svg {
     font-size: 30px;
     vertical-align: middle;

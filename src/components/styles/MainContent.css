@@ -62,6 +62,7 @@ button span {
 
 .content-details .details-wrapper {
     max-width: 900px;
+    min-width: 190px;
 }
 .details-wrapper button {
     margin-top: 15px;
