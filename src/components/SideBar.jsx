@@ -19,7 +19,7 @@ const SideBar = () => {
     return (
         <>
             <div className="menu-icon" onClick={() => changeState()}>
-                {(icon === 'close') ? <IoCloseSharp id="isClose" /> :<IoMenu id="isOpen" /> }
+                {(icon === 'close') ? <IoCloseSharp id="isClose" /> : <IoMenu id="isOpen" />}
             </div>
             <nav className={`nav-mobile-menu ${state}`}>
                 <ul>

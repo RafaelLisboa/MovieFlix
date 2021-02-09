@@ -19,19 +19,24 @@
 .row__images {
     overflow-x: scroll;
     overflow-y: hidden;
+    position: relative;
 }
 
 .row__images img {
     padding: 0 3px;
 }
 
-.row__images::-webkit-scrollbar, .row__line::-webkit-scrollbar {
+.row__images::-webkit-scrollbar,
+.row__line::-webkit-scrollbar {
     display: none;
 }
 
-.row__images,.row__line {
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+.row__images,
+.row__line {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .row__images img {
@@ -39,6 +44,6 @@ scrollbar-width: none;  /* Firefox */
     transition: 0.4s ease
 }
 
-.row__images img:hover  {
+.row__images img:hover {
     transform: scale(1.1);
 }

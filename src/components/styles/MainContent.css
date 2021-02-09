@@ -14,11 +14,13 @@
     height: 100%;
     top: 0;
     left: 0;
-    transform: translate(5% , 40%);
+    transform: translate(5%, 40%);
     z-index: 3;
     color: #fff;
 }
-#play, #more-info {
+
+#play,
+#more-info {
     width: 150px;
     height: 33px;
     background-color: #fff;
@@ -38,22 +40,20 @@
 }
 
 #more-info {
-    background-color:rgba(99, 99, 99, 0.3);
+    background-color: rgba(99, 99, 99, 0.3);
     color: #fff;
     width: 200px;
 }
 
-#play svg, #more-info svg{
+#play svg,
+#more-info svg {
     font-size: 26px;
     vertical-align: middle;
-    
 }
 
 button span {
     font-size: 16px;
 }
-
-
 
 .content-details .title {
     font-size: 48px;
@@ -64,13 +64,13 @@ button span {
     max-width: 900px;
     min-width: 190px;
 }
+
 .details-wrapper button {
     margin-top: 15px;
 }
 
 .details-wrapper button:hover {
     cursor: pointer;
-
 }
 
 .layer {
@@ -81,64 +81,52 @@ button span {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%);
 }
 
-
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
     .background-image {
         height: 55vh;
         padding-top: 76px;
     }
-
     .details-wrapper {
-        margin: 0 auto;        
+        margin: 0 auto;
     }
-
     .background-image img {
         height: 500px;
     }
-
     .title {
         font-size: 30px !important;
     }
-
     p.description {
         display: none !important;
     }
-
-    #play span, #more-info span{
+    #play span,
+    #more-info span {
         display: none;
     }
-
-    #play, #more-info {
+    #play,
+    #more-info {
         width: 80px;
     }
-
     .background-image img {
         height: 55vh;
     }
-
     .content-details {
         position: absolute;
         text-align: center;
         top: 0;
         left: 50%;
-        transform: translate(-49% , 71%);
-        
+        transform: translate(-49%, 71%);
     }
 }
-
 
 @media screen and (max-width: 380px) {
     .menu {
         display: none;
     }
-
     .title {
         font-size: 20px !important;
     }
-
-    #play, #more-info {
+    #play,
+    #more-info {
         width: 55px;
     }
-
-
 }

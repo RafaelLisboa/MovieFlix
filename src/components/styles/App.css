@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +6,14 @@
     outline: none;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background-color: #000;
     color: #fff;
     font-family: 'Anton', sans-serif;
     min-height: 600px;
 }
-
 
 .Container {
     width: 100%;

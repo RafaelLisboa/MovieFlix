@@ -1,3 +1,5 @@
-@media screen and (max-width: 769px){
-    .row-wrapper {padding-top: 76px}
+@media screen and (max-width: 769px) {
+    .row-wrapper {
+        padding-top: 76px
+    }
 }
