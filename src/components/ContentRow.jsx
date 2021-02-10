@@ -13,7 +13,7 @@ function ContentRow(props) {
                         nextButtonText: <IoArrowForwardCircleOutline />,
                         prevButtonText: <IoArrowBackCircleOutline />
                     }
-                } slidesToScroll={3} slidesToShow={5} dragging={true} slideWidth="191px" className="row__images">
+                } slidesToScroll={3} slidesToShow={5} dragging={false} slideWidth="191px" className="row__images">
                     {props.results.map(element => {
                         return <img draggable="false" key={element.id} src={`https://image.tmdb.org/t/p/w200/${element.poster_path}`} alt="" />
                     })}
