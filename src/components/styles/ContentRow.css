@@ -47,3 +47,16 @@
 .row__images img:hover {
     transform: scale(1.1);
 }
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .row__images {
+        display: none !important;
+    }
+    .mobile {
+        display: block !important;
+    }
+}
