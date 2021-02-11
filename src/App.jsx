@@ -5,6 +5,7 @@ import Movies from './movies'
 import MainContent from './components/MainContent'
 import Header from './components/Header'
 import RowWrapper from './components/RowWrapper'
+import Loading from './components/Loading'
 
 const App = () => {
     const [content, setContent] = useState({
@@ -48,6 +49,12 @@ const App = () => {
     return (
         <>
             <Header />
+            {
+                content.main.length <= 0 &&
+                <div>
+                    <Loading />
+                </div>
+            }
             <MainContent main={content.mainItem} />
             <RowWrapper>
                 <ContentRow gener="Em alta" results={content.main} />
@@ -58,6 +65,10 @@ const App = () => {
                 <ContentRow gener="Terror" results={content.horror} />
                 <ContentRow gener="Mistério" results={content.mistery} />
             </RowWrapper>
+            <footer>
+                Projeto desenvolvido por Rafael Lisboa <br />
+                API de filmes utilizada TMDB
+            </footer>
         </>
     )
 }

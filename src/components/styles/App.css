@@ -21,3 +21,10 @@ body {
     margin: 0 auto;
     padding: 0 2%;
 }
+
+footer {
+    width: 100%;
+    padding: 50px 5%;
+    font-size: 25px;
+    text-align: center;
+}
