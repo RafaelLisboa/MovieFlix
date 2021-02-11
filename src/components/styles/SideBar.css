@@ -26,6 +26,7 @@
 }
 
 .menu-icon {
+    cursor: pointer;
     font-size: 57px;
     line-height: 50px;
 }

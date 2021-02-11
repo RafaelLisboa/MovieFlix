@@ -40,7 +40,7 @@ const App = () => {
                 adventure: adventureContent.results,
                 romance: romanceContent.results,
                 horror: horrorContent.results,
-                mistery : misteryContent.results
+                mistery: misteryContent.results
             });
         }
         loadContent();
@@ -50,10 +50,7 @@ const App = () => {
         <>
             <Header />
             {
-                content.main.length <= 0 &&
-                <div>
-                    <Loading />
-                </div>
+                content.main.length <= 0 && <Loading />
             }
             <MainContent main={content.mainItem} />
             <RowWrapper>

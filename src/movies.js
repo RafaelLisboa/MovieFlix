@@ -6,6 +6,7 @@ const getContentData = async(genrerID) => {
     const url = `${urlBase}movie/?api_key=${api_key}&with_genres=${genrerID}&language=pt-BR`;
     let fecthData = await fetch(url);
     const json = await fecthData.json();
+    console.log(json);
     return json;
 };
 
