@@ -1,4 +1,4 @@
-# MovieFlix
+# MovieFlix 🎬 💻
 
 ![Movie-flix](https://user-images.githubusercontent.com/63372442/108455937-f4338f00-724d-11eb-9ab3-ce2f56a739e2.png)
 
@@ -6,7 +6,7 @@ Netflix-based website layout
 Using only React JS
 
 
-## Install Project
+## Install Project 🔧  ⚙
 
 First use the command
 ```
