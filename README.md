@@ -1,4 +1,6 @@
-# MovieFlix 🎬 💻
+![](https://img.shields.io/github/stars/RafaelLisboa/MovieFlix?style=flat-square)
+![](https://img.shields.io/github/license/RafaelLisboa/MovieFlix?logo=License&style=flat-square)
+# MovieFlix 🎬 
 
 ![Movie-flix](https://user-images.githubusercontent.com/63372442/108455937-f4338f00-724d-11eb-9ab3-ce2f56a739e2.png)
 
